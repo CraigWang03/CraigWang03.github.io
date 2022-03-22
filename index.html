@@ -1,145 +1,115 @@
-<!doctype html>
-
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>This is a Wunderbucket site</title>
-  <meta name="description" content="Something awesome is coming to this URL soon.">
-  <meta name="author" content=" ">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>COMP2123 Assignment 1</title>
+	</head>
 <body>
-  <!--
-    Hi there! This is just a starter HTML template. Feel free to hack away and change it however you want.
-    This is YOUR site. Build something interesting.
-    
-    Cheers!!
-  -->
+<h2>COMP2123 Assignment 1</h2>
 
-  <div class="container">
-    <div class="inside">
-      <header>
-        <img src="img/header.png" srcset="img/header.png 1x, img/header@2x.png 2x" />
-      </header>
-      <h1>This is a Wunderbucket site</h1>
-      <p>To get started, just open up <em>index.html</em> with your favorite code editor and start making changes.
-        They’ll show up here as you edit.</p>
-      <h2>Here's some of the features that you get with your Wunderbucket site:</h2>
-      <section>
-        <div class="section-group">
-          <h4>A public domain</h4>
-          <p>
-            When you publish your Wunderbucket site it goes directly to your domain.
-            You can add a custom domain any time you want by flipping your site from “Dev” to “Live”.
-          </p>
-          <p>
-            <a href="https://my-first-site-octoleft.wunderbucket.dev" class="emphasized">
-              https://my-first-site-octoleft.wunderbucket.dev
-            </a>
-          </p>
-        </div>
-        <div class="section-group">
-          <h4>A local server</h4>
-          <p>
-            Every Wunderbucket site comes with a localhost server that automatically reloads when you make changes.
-          </p>
-        </div>
-      </section>
+<h3>SID: 510209041</h3>
 
-      <h2>Need more?</h2>
-      <p>
-        If you want to do a bit more with your HTML, you can use our simple <a
-          href="https://github.com/levinunnink/merge.js">Merge.js templating framework</a>.
-        Merge.js is a simple templating framework that makes it easier to manage your html websites without having to
-        learn a backend language.
-      </p>
+<h4>Problem 1</h4>
 
-      <section class="feature">
-        <div class="section-group">
-          <h4>Includes</h4>
-          <p>You can include HTML files with by adding the <em>data-merge-include</em> attribute to an element.</p>
-          <p>
-            <a href="https://github.com/levinunnink/merge.js#includes-data-merge-include" target="_blank">Learn
-              more.</a>
-          </p>
-        </div>
-        <code>
-          <pre data-merge-content="examples.includes"></pre>
-        </code>
-      </section>
+<p>For each integer in the array A, run the mod operation once. It will either run in the first for loop, which is for the integers with an even index, and for integers with odd index, it will run once in the second for loop. There will only be n-1 or n-2 elements to be operated due to the for loop statement. That’s O(n-1), upper-bound to O(n).</p>
 
-      <section class="feature">
-        <div class="section-group">
-          <h4>Loops</h4>
-          <p>If you have a lot of the same elements on a page and want to create a loop that just repeats them, you can
-            use the <em>data-merge-repeat</em> attriute.</p>
-          <p>
-            <a href="https://github.com/levinunnink/merge.js#includes-data-merge-include" target="_blank">Learn
-              more.</a>
-          </p>
-        </div>
-        <code>
-          <pre data-merge-content="examples.loops"></pre>
-        </code>
-      </section>
+<p>For the boolean value assignment operation, that will be O(1)*n. So, the running time of this algorithm will be O(n).</p>
 
-      <section class="feature">
-        <div class="section-group">
-          <h4>Markdown</h4>
-          <p>Save your content in Markdown files. Use the <em>data-merge-include-markdown</em> attribute and Merge will
-            include it parse it into HTML for you.</p>
-          <p>
-            <a href="https://github.com/levinunnink/merge.js#markdown-data-merge-include-markdown">Learn more.</a>
-          </p>
-        </div>
-        <code>
-          <pre data-merge-content="examples.markdown"></pre>
-        </code>
-      </section>
+<h4>Problem 2</h4>
 
-      <section class="feature">
-        <div class="section-group">
-          <h4>Databases</h4>
-          <p>Merge can load JSON content from any accessible URL.
-            For simple databases, you can store it as a JSON file right in your local directory.
-            We’ve created a <em>examples.json</em> example for this site. And we're loding it in on
-            line <em>135</em>.
-          </p>
-          <p>
-            <a href="https://github.com/levinunnink/merge.js#loading-data-into-the-engine-state">Learn more.</a>
-          </p>
-        </div>
-        <code>
-          <pre data-merge-content="examples.json"></pre>
-        </code>
-      </section>
-      <h2>100% static, clean output</h2>
-      <p>
-        When you upload your site to Wunderbucket, we run Merge on the server to generate 100% static output so there's
-        no loading delay like you might see on your localhost site. We also remove every trace of Merge, so your
-        source code stays clean and pretty.
-      </p>
-      <p>Just try making a change and publishing this site. View the source code on your public domain once it's done to
-        see what we're talking about.</p>
-    </div>
+<h5>a)</h5>
 
-    <footer data-merge-include="includes/footer.html"></footer>
-  </div>
-  <script src="js/scripts.js"></script>
-  <script data-type="merge-script">
-    document.addEventListener('DOMContentLoaded', function () {
-      merge.loadState('/examples.json');
-    }, false);
-  </script>
-  <!--
-    You might notice that this HTML isn't minimized and it doesn't have lots of
-    libraries embedded in it. We think that this is how HTML should look
-    for most websites. We hope you use Wunderbucket to build pages that will last. 
-    
-    https://jeffhuang.com/designed_to_last/ 
-  -->
+<p>Build a stack <code>s</code></p>
+
+<p>Create a variable <code>minInt</code> to store the current minimum integer.</p>
+
+<p>Use a <code>getMin()</code> method to get the minimum integer of the stack, when call <code>getMin()</code> it will return <code>minInt</code>.</p>
+
+<p>When push a new integer x.</p>
+
+<ul>
+	<li>If stack s is empty, push x and assign x to <code>minInt</code>.</li>
+	<li>If the stack is not empty, which means there is an integer already stored in <code>minInt</code>.
+
+		<ul>
+			<li>If x is larger than <code>minInt</code>, just push it to the stack.</li>
+			<li>If it’s smaller than <code>minInt</code>, assign x to <code>minInt</code>, then push <code>2 * x - minInt</code> to stack.</li>
+		</ul></li>
+</ul>
+
+<p>Use <code>pop()</code> method to remove the integer on top of the stack. Compare the top integer with the minimum. </p>
+
+<ul>
+	<li>If stack is empty, return null.</li>
+	<li>If top int is smaller than <code>minInt</code>, means it’s pushed as <code>2 * x - minInt</code>, so pop and return <code>minInt</code>, and change <code>minInt</code> to <code>2 * minInt - t</code>.</li>
+	<li>If it’s larger than <code>minInt</code>, just pop and return.</li>
+</ul>
+
+<p>For the <code>top()</code> method, it’s similar to <code>pop()</code>, if the top integer is smaller than the value stored in <code>minInt</code>, the program should return the minimum value stored instead.</p>
+
+<h5>b)</h5>
+
+<p>For the given situation:</p>
+
+<p><code>push(23)</code> stack:<code>[23]</code> minimum:<code>23</code></p>
+
+<p><code>push(4)</code> stack:<code>[23,-15]</code> minimum:<code>4</code></p>
+
+<p><code>getMinimum()</code> returns <code>4</code></p>
+
+<p><code>pop()</code> returns the minimum<code>4</code> and stack will be<code>[23]</code>, minimum change to <code>2*4-(-15)</code> which is <code>23</code></p>
+
+<p><code>getMinimum()</code>returns<code>23</code></p>
+
+<p>The <code>top()</code> method is very similar to <code>pop()</code>.</p>
+
+<h5>c)</h5>
+
+<p>T(n) will be O(n), all the integers only store in the stack, and other steps are assignments, comparisons, and combination of basic maths operations.</p>
+
+<p>The space complexity will be O(n). The space of data structure only grows as pushing integers.</p>
+
+<h4>Problem 3</h4>
+
+<h5>a)</h5>
+
+<p>Create an empty array <code>result</code> which will store the result for each lighthouse in order.</p>
+
+<p>Create an integer <code>highest</code> to store the index of the highest lighthouse by far. Its value should be 0 at beginning.</p>
+
+<p>Create an integer <code>height</code> to store the highest lighthouse’s height.</p>
+
+<p>For the first element in array <code>A</code>, the airplanes can always reach the land, so just push <code>-1</code> to the <code>result</code> array. Store <code>A[0]</code> to <code>height</code>.</p>
+
+<p>For each <code>A[i]</code> after <code>A[0]</code>, compare that with <code>height</code>. </p>
+
+<ul>
+	<li>If smaller, index each lighthouse’s height from <code>A[i]</code> to <code>A[i-1]</code> until the left-most one. When find the first one larger than <code>A[i]</code> stop and store that index as the result.</li>
+	<li>If bigger, store the result of the former highest lighthouse to <code>result</code> and set <code>height</code> to <code>A[i]</code> and <code>highest</code> to <code>i</code>.</li>
+</ul>
+
+<p>When finished indexing all integers, return the array <code>result</code>.</p>
+
+<h5>b)</h5>
+
+<p>With the example provided:</p>
+
+<p>For <code>A[0]</code>, result will be <code>-1</code>. The highest lighthouse and its height will be <code>[0,5]</code>. </p>
+
+<p>For <code>A[1]</code>, the result will be <code>0</code> which is the index of the highest lighthouse. The highest lighthouse and its height will be <code>[0,5]</code>. <code>delta</code> is <code>5-3=2</code>.</p>
+
+<p>For <code>A[2]</code>, 1 is smaller than 5, index to left and find tower1 is higher, so the result should be <code>1</code>.</p>
+
+<p>For <code>A[3]</code>, result will be <code>-1</code>. The highest lighthouse and its height will be <code>[3,5]</code>. </p>
+
+<p>For <code>A[4]</code>, it’s lower than the highest tower, so index to left and find <code>A[3]</code> is higher, store <code>3</code> as the result.</p>
+
+<h5>c)</h5>
+
+<p>The worst case would be the tower0 is highest, tower1 is lowest and each of the tower from 1 to right most will increase. In this case, the time complexity will be O(n^2). Because for each of the element, the algorithm should index back through all the results.</p>
+
 </body>
-
 </html>
+
